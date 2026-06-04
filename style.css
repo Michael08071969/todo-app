@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
-  flex;
+  display: flex;
   justify-content: center;
   padding: 50px;
 }
@@ -10,13 +10,26 @@ body {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 400px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-bar {
+  margin-top: 12px;
+}
+
+.filter-bar input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 input {
@@ -37,11 +50,24 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 8px;
   border-bottom: 1px solid #ddd;
+  gap: 8px;
+  cursor: pointer;
 }
 
 li.done {
   text-decoration: line-through;
   color: #888;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-assignee {
+  font-size: 0.8em;
+  color: #555;
+  white-space: nowrap;
 }
