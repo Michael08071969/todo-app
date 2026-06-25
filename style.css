@@ -14,6 +14,23 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.status-card {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+
+.status-card h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.status-card p {
+  margin: 0;
+  color: #444;
+}
+
 form {
   display: flex;
   gap: 10px;
